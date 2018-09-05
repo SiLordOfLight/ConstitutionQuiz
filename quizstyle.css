@@ -49,13 +49,9 @@ h1 {
   line-height: 0;
 }
 
-img {
+#submitButton {
   margin: auto;
   width: 80px;
   height: 80px;
   display: block;
-}
-
-img:hover {
-  filter: hue-rotate(50deg);
 }
