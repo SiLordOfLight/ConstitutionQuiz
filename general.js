@@ -93,7 +93,7 @@ $("document").ready(function(){
 
     console.log(rightAnswerButton);
 
-    if (rightAnswerButton.style.backgroundColor == 'DodgerBlue'){
+    if (rightAnswerButton.style.backgroundColor == 'rgb(30, 144, 255)'){
       var score = parseInt(sessionStorage.getItem('score'));
       score += 1;
       sessionStorage.setItem('score',''+score);
