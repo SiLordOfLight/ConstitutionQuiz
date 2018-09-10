@@ -56,13 +56,15 @@ $("document").ready(function(){
   startLoad();
 
   $(".answer_button").hover(function (event){
-    event.target.style.backgroundColor = "#1e90fe";
-    console.log("Over");
+    if (event.target.style.backgroundColor != "rgb(30, 144, 255)"){
+      event.target.style.backgroundColor = "#1e90fe";
+      console.log("Over");
+    }
   }, function (event){
     console.log("Leave");
     console.log(event.target.style.backgroundColor);
 
-    if (event.target.style.backgroundColor == "dodgerBlue"){
+    if (event.target.style.backgroundColor == "rgb(30, 144, 255)"){
       console.log("Nada");
     } else {
       event.target.style.backgroundColor = "white";
@@ -71,7 +73,7 @@ $("document").ready(function(){
 
   $(".answer_button").click(function (event) {
     console.log("Click");
-    event.target.style.backgroundColor = 'DodgerBlue';
+    event.target.style.backgroundColor = 'rgb(30, 144, 255)';
 
     var selectOthers = ".answer_button[id!='"+event.target.id+"']";
 
